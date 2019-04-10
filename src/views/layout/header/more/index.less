@@ -1,0 +1,32 @@
+.userinfo{
+    cursor: auto;
+    padding: 0;
+    dl{
+        margin: 0;
+        padding: 12px;
+        dt{
+            font-size: 16px;
+            padding: 0 12px;
+            color: #000;
+            line-height: 26px;
+            min-height: 26px;
+        }
+        dd{
+            margin: 0;
+            padding: 0 12px;
+            white-space: nowrap;
+            line-height: 22px;
+        }
+    }
+    &:hover{
+        background-color: transparent;
+    }
+}
+
+.icon-trans:before{
+    transition: all 0.5s;
+}
+.icon-style:before{
+    transition: all 0.5s;
+    transform: rotate(-180deg);
+}

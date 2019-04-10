@@ -1,0 +1,100 @@
+{
+    "clientCode": "string",
+    "clientId": 0,
+    "clientLegalId": 0,
+    "clientLegalName": "string",
+    "clientName": "string",
+    "clientQuotationType": 0,
+    "clientQuotationWarehouses": [
+        {
+            "clientQuotationId": 0,
+            "costUnitId": 0,
+            "costUnitName": "string",
+            "expenseId": 0,
+            "expenseName": "string",
+            "id": 0,
+            "isMonthlyCharges": 0,
+            "lowestFee": 0,
+            "multiple": 0,
+            "partId": 0,
+            "partName": "string",
+            "remark": "string",
+            "unitPrice": 0
+        }
+    ],
+    "currencyId": 0,
+    "currencyName": "string",
+    "days": 0,
+    "demandId": 0,
+    "demandName": "string",
+    "effectiveDate": "2018-09-05T08:14:07.408Z",
+    "expirationDate": "2018-09-05T08:14:07.408Z",
+    "extensionMonths": 0,
+    "extensionTerms": 0,
+    "freeWarehousePeriod": 0,
+    "id": 0,
+    "isTextsIncluded": 0,
+    "paymentTerms": 0,
+    "quotationNumber": "string",
+    "remark": "string",
+    "taxes": 0,
+    "transportModeBusinessModes": [
+        {
+            "businessModeId": 0,
+            "businessModeName": "string",
+            "quotationLineExpenses": [
+                {
+                    "carType": 0,
+                    "carTypeName": "string",
+                    "continuedWeight": 0,
+                    "costUnitId": 0,
+                    "costUnitName": "string",
+                    "endValue": 0,
+                    "expenseItemId": 0,
+                    "expenseItemName": "string",
+                    "firstWeight": 0,
+                    "id": 0,
+                    "intervalCostUnitId": 0,
+                    "intervalCostUnitName": "string",
+                    "key": "string", 
+                    "lowestFee": 0,
+                    "secondEndValue": "string",
+                    "secondIntervalCostUnitId": "string",
+                    "secondIntervalCostUnitName": "string",
+                    "secondStartValue": "string",
+                    "startValue": 0
+                }
+            ],
+            "quotationLines": [
+                {
+                    "aging": 0,
+                    "departure": "string",
+                    "destination": "string",
+                    "id": 0,
+                    "isHighway": 0,
+                    "isPick": 0,
+                    "lowestFee": 0,
+                    "quotationLineExpenseItems": [
+                        {
+                            "key": "string",
+                            "chargeFee": 0,
+                            "id": 0,
+                            "quotationLineExpenseId": 0,
+                            "quotationLineId": 0
+                        }
+                    ],
+                    "quotationType": 0,
+                    "remark": "string",
+                    "transitPlaceOneId": 0,
+                    "transitPlaceOneName": "string",
+                    "transitPlaceTwoId": 0,
+                    "transitPlaceTwoName": "string"
+                }
+            ],
+            "transportModeId": 0,
+            "transportModeName": "string"
+        }
+    ],
+    "warehouseId": 0,
+    "warehouseName": "string"
+}

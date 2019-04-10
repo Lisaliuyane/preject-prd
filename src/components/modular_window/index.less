@@ -1,0 +1,43 @@
+@import "~antd/lib/style/themes/default.less";
+.custom-modal {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    right: 0;
+    overflow: hidden;
+}
+.custom-modal-box {
+    background: white;
+    min-width: 500px;
+    position: relative;
+}
+.custom-modal-content {
+    overflow: auto;
+    position: relative;
+}
+.custom-modal-close {
+    display: inline-block;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.custom-modal-close:hover {
+    background: rgba(255,255,255,0.1);
+}
+.custom-modal-title {
+    // border-bottom: 1px solid #eee;
+    background: #313131;
+    color: white;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.217647), 0 1px 4px rgba(0, 0, 0, 0.217647);
+}
+.custom-modal-footer {
+    border-top: 1px solid #eee;
+    padding: 5px 10px;
+    text-align: left;
+}
+.custom-modal-footer > div, .custom-modal-footer > button {
+    margin-left: 10px;
+}
+

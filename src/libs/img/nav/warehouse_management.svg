@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>仓库管理</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="财务管理" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.7">
+        <g id="应付对账-特殊业务-待开立列表" transform="translate(-25.000000, -531.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="仓库管理" transform="translate(32.500000, 538.500000) scale(-1, 1) translate(-32.500000, -538.500000) translate(25.000000, 531.000000)">
+                <polygon id="Shape" points="2 4 5 4 5 5 2 5"></polygon>
+                <path d="M7,0 L0.00479744207,0 L0.00479744207,7 L6.9985341,7 L6.9985341,0 L7,0 Z M5.99866631,6 L1,6 L1,1 L6,1 L6,6 L5.99866631,6 Z M0,15 L7,15 L7,8 L0,8 L0,15 Z M1,9 L6,9 L6,14 L1,14 L1,9 Z" id="Shape"></path>
+                <path d="M2,12 L5,12 L5,13 L2,13 L2,12 Z M10,12 L13,12 L13,13 L10,13 L10,12 Z" id="Shape"></path>
+                <path d="M8,8 L8,15 L15,15 L15,8 L8,8 Z M13.9986663,14 L9,14 L9,9 L14,9 L14,14 L13.9986663,14 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

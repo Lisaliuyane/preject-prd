@@ -1,0 +1,78 @@
+{
+    "carrierId": 0,
+    "carrierName": "string",
+    "contractNo": "string",
+    "currencyId": 0,
+    "currencyName": "string",
+    "days": 0,
+    "dockedPersonId": 0,
+    "dockedPersonName": "string",
+    "effectiveDate": "2018-09-04T01:55:36.702Z",
+    "expirationDate": "2018-09-04T01:55:36.702Z",
+    "extensionMonths": 0,
+    "extensionTerms": 0,
+    "id": 0,
+    "isTextsIncluded": 0,
+    "paymentTerms": 0,
+    "quotationNumber": "string",
+    "remark": "string",
+    "removeAttachmentIds": [
+        0
+    ],
+    "taxes": 0,
+    "transportModeBusinessModes": [
+        {
+            "businessModeId": 0,
+            "businessModeName": "string",
+            "quotationLines": [
+                {
+                    "aging": 0,
+                    "departure": "string",
+                    "destination": "string",
+                    "id": 0,
+                    "isHighway": 0,
+                    "isPick": 0,
+                    "lowestFee": 0,
+                    "quotationLineExpenseItems": [
+                        {
+                            "carType": 0,
+                            "carTypeName": "string",
+                            "chargeFee": 0,
+                            "continuedWeight": 0,
+                            "costUnitId": 0,
+                            "costUnitName": "string",
+                            "endValue": 0,
+                            "expenseItemId": 0,
+                            "expenseItemName": "string",
+                            "firstWeight": 0,
+                            "id": 0,
+                            "intervalCostUnitId": 0,
+                            "intervalCostUnitName": "string",
+                            "lowestFee": 0,
+                            "secondEndValue": "string",
+                            "secondIntervalCostUnitId": "string",
+                            "secondIntervalCostUnitName": "string",
+                            "secondStartValue": "string",
+                            "startValue": 0
+                        }
+                    ],
+                    "quotationType": 0,
+                    "remark": "string",
+                    "transitPlaceOneId": 0,
+                    "transitPlaceOneName": "string",
+                    "transitPlaceTwoId": 0,
+                    "transitPlaceTwoName": "string"
+                }
+            ],
+            "transportModeId": 0,
+            "transportModeName": "string"
+        }
+    ],
+    "uploadFileVo": [
+        {
+            "fileName": "string",
+            "filePath": "string",
+            "id": 0
+        }
+    ]
+}

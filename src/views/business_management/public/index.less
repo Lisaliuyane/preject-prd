@@ -1,0 +1,57 @@
+/* 收发货方显示 */
+.recive-and-send-main{
+    padding: 10px;
+    &.nopad{
+        padding: 0;
+    }
+    .send-icon, .recive-icon{
+        margin: 0px 30px;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+    }
+    .send-icon{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        .send-text{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #FFBF00;
+        }
+        .send-line{
+            width: 2px;
+            height: 100%;
+            background: #ddd;
+            margin: 0 auto;
+            margin-bottom: -10px;
+        }
+    }
+    .recive-icon{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        line-height: 20px;
+        background: #33A5FF;
+    }
+    .send-main, .recive-main{
+        position: relative;
+        background: #F7F7F7;
+        border-radius: 4px;
+        padding: 5px;
+        max-width: 600px;
+        height: auto;
+        .rigth-icon{
+            position:absolute;
+            left: -10px;
+            top: 5px;
+            width:0;
+            height:0;
+            border-width:10px 10px 10px 0;
+            border-style:solid;
+            border-color:transparent #F7F7F7 transparent transparent;/*透明 灰 透明 透明 */
+        }
+    }
+}
+/* 收发货方显示 */

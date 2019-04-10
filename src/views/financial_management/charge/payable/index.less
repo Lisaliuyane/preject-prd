@@ -1,0 +1,83 @@
+.page-charge-payable{
+
+    .ant-table-filter-dropdown-link{
+        border-top: none;
+        line-height: 1.8;
+        height: auto;
+    }
+    .col-status{
+        .pointer{
+            display: flex;
+            align-items: center;
+            &::before{
+                content: '';
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                margin-right: 6px;
+            }
+            &.no{
+                &::before{
+                    background-color: #FFBF00;
+                }
+            }
+            &.yes{
+                &::before{
+                    background-color: #339EEB;
+                }
+            }
+        }
+    }
+    td.col-fee{
+        vertical-align: middle;
+        span.more{
+            margin-left: 6px;
+            cursor: pointer;
+            display: inline-block;
+            border: 1px solid #18B583;
+            width: 14px;
+            height: 14px;
+            color: #18B583;
+            line-height: 14px;
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+    .fee-more{
+        ul{
+            margin: 0;
+            padding: 0;
+            li{
+                display: flex;
+                height: 32px;
+                line-height: 32px;
+                align-items: center;
+                justify-content: space-between;
+                color: #333;
+                &:first-child{
+                    border-bottom: 1px solid #e1e1e1;
+                    color: #808080;
+                }
+                &>div{
+                    margin-right: 8px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    &:nth-of-type(1){
+                        width: 60px;
+                    }
+                    &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
+                        width: 100px;
+                    }
+                    &:first-child{
+                        margin-right: 0px;
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+                
+            }
+        }
+    }
+}

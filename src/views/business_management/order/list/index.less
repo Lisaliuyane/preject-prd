@@ -1,0 +1,90 @@
+.order-statistics {
+    color: black;
+}
+
+.page-order-list{
+    
+    .modal-replyupload{
+        @border: 1px solid #d9d9d9;
+        .main-content{
+            display: flex;
+
+            .tb-left{
+                width: 579px;
+                border-right: @border;
+                flex-grow: 0;
+                flex-shrink: 0;
+                padding-bottom: 10px;
+
+                .col-preview{
+                    .pic{
+                        width: 66px;
+                        height: 40px;
+                        background-color: #eee;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .form-right{
+                flex-grow: 1;
+
+                .headbar{
+                    padding: 0 10px;
+                    height: 32px;
+                    line-height: 32px;
+                    padding: 0 10px;
+                    border-bottom: @border;
+                }
+
+                .content{
+                    padding: 0 10px;
+
+                    .upload-show{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-grow: 1;
+                        overflow: hidden;
+
+                        &>div{
+                            &:first-child{
+                                flex-grow: 0;
+                                margin-right: 8px;
+                                cursor: pointer;
+                                max-width: 140px;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                            &:last-child{
+                                flex-shrink: 0;
+                            }
+                        }
+
+                        .ant-upload-list{
+                            display: none;
+                        }
+                    }
+                }
+
+                .footbar{
+                    margin-top: 5px;
+                    padding: 0 10px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    border-top: @border;
+
+                    .ant-btn{
+                        margin-left: 8px;
+                        &:first-of-type{
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

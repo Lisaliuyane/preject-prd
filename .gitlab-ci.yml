@@ -1,0 +1,47 @@
+stages:
+  - test
+  - build
+  
+dev-test-job:
+  tags:
+    - dev
+  only:
+    - master
+  stage: test
+  script:
+    - yarn -version
+    
+
+dev-build-job:
+  tags:
+    - dev
+  only:
+    - master
+  stage: build
+  script:
+    # - echo "export const showTabs = () => {}" > src/config/tabs.js
+    # - yarn install
+    # - CI=false yarn run build
+    - source=./build; dest=/home/gitlab-runner/www; mkdir -p $dest; rsync -av $source $dest;
+
+# 生产环境
+production-test-job:
+  tags:
+    - production
+  only:
+    - release1.0.0
+  stage: test
+  script:
+    - yarn -version
+
+production-build-job:
+  tags:
+    - production
+  only:
+    - release1.0.0
+  stage: build
+  script:
+    # - echo "export const showTabs = () => {}" > src/config/tabs.js
+    # - yarn install
+    # - CI=false yarn run build
+    - source=./build; dest=/home/gitlab-runner/www; mkdir -p $dest; rsync -av $source $dest;

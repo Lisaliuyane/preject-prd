@@ -1,0 +1,218 @@
+.tab-text {
+    padding: 10px 0;
+    min-width: 80px;
+    text-align: center;
+}
+.right-click-menu-text {
+    margin-left: 10px;
+}
+
+.ant-tabs-ink-bar{
+    display: none !important;
+}
+// .fold-style{
+//     z-index: 9999;
+//     font-size: 20px;
+//     position: absolute;
+//     margin-top: 5px;
+// }
+
+.root-tabs{
+    height: 100%;
+
+    &>.ant-tabs-content{
+        height: 100%;
+
+        &>.ant-tabs-tabpane{
+            height: 100%;
+
+            &>.ant-layout-content{
+                padding: 0;
+                width: 100%;
+                height: 100%;
+
+                &>.content-view{
+                    height: 100%;
+                    overflow-y: auto;
+                }
+            }
+        }
+    }
+}
+
+.foldbtn {
+    z-index: 1050;
+    font-size: 22px;
+    position: absolute;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform 400ms;
+    height: 40px;
+    width: 50px;
+    text-align: center;
+    line-height: 40px;
+    &:hover {
+        background: #eee;
+    }
+    .folded {
+        font-size: 22px;
+        // &::before{
+        //     transform: rotate(540deg);
+        //     color: #1DA57A;
+        // }
+        transition: transform 400ms;
+        // transform: rotate(540deg);
+    }
+    .folded-collapsed {
+        transform: rotate(540deg);
+    }
+    // &::before{
+    //     transition: transform 400ms;
+    //     color: rgba(0,0,0,0.5);
+    // }
+}
+.header-view {
+    box-shadow: 0 3px 6px -3px #00000059;
+    background: white;
+    position: fixed;
+    top: 54px;
+    height: 40px;
+    z-index: 1;
+}
+
+#scroll-view>div>.ant-tabs-bar {
+    margin: 0;
+    border-bottom: 1px solid #fff;
+    position: fixed;
+    background: white;
+    z-index: 1;
+    transition: left 400ms;
+    height: 40px;
+    margin-top: -50px;
+    .ant-tabs-nav-container {
+        margin-top: 5px;
+    }
+    .ant-tabs-tab {
+        margin-right: -6px !important;
+        .tab-text{
+            border-radius: 2px 2px 0 0;
+            // box-shadow: 0 1px 0 0 #ccc inset;
+            background-color: #eee;
+            position: relative;
+            padding: 7px 25px 1px 10px;
+            border-top: 1px solid #d7d7d7;
+            font-size: 14px;
+            span {
+                max-width: 100px;
+                overflow: hidden;
+                white-space: nowrap;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                display: inline-block;
+            }
+            i.close{
+                position: absolute;
+                font-size: 12px;
+                padding: 1px;
+                right: 2px;
+                margin-right: 0;
+                z-index: 70;
+                top: 50%;
+                margin-top: -7px;
+                color: #333;
+                &:hover{
+                    color: #fff;
+                    background-color: #f5222d;
+                    border-radius: 50%;
+                }
+            }
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                top: -1px;
+                bottom: 0;
+                left: 0;
+                width: 10px;
+                height: calc(100% + 5px);
+                background-color: #eee;
+                transform-origin: 0% 0%;
+                transform: rotate(16deg);
+                z-index: -1;
+                box-shadow: 1px 0 0 0 #d7d7d7 inset;
+            }
+            &::after{
+                content: '';
+                display: block;
+                position: absolute;
+                top: -2px;
+                bottom: 0;
+                right: 0;
+                width: 10px;
+                height: calc(100% + 5px);
+                background-color: #eee;
+                transform-origin: 100% 0%;
+                transform: rotate(-16deg);
+                z-index: -1;
+                box-shadow: -1px 0 0 0 #d7d7d7 inset;
+            }
+        }
+    }
+    // .ant-tabs-nav{
+    //     padding: 0 16px 0 16px;
+    // }
+    .ant-tabs-tab {
+        padding: 0 10px 0;
+    }
+    .ant-tabs-tab-next {
+        background: #fff;
+        box-shadow: 0px 1px 1px 1px #ccc;
+        height: 98%;
+        margin-top: 1px;
+        &:hover {
+             box-shadow: 0px 1px 1px 4px #ccc;
+        }
+    }
+    .ant-tabs-tab-prev {
+        background: #fff;
+        box-shadow: 0px 1px 1px 1px #ccc;
+        left: 1px;
+        height: 98%;
+        margin-top: 1px;
+        &:hover {
+             box-shadow: 0px 2px 2px 4px #ccc;
+        }
+    }
+    // .ant-tabs-tab-prev.ant-tabs-tab-arrow-show,.ant-tabs-tab-next.ant-tabs-tab-arrow-show{
+    //     height: 98%;
+    // }
+    .ant-menu-inline {
+        overflow: hidden;
+    }
+    .react-contexify__item__data {
+        align-items: center;
+    }
+    .ant-tabs-nav .ant-tabs-tab-active {
+        // box-shadow: 0 0 5px #ccc; 
+        // z-index: 999;
+        .tab-text{
+            background-color: #fff;
+            // box-shadow: 0 1px 0 0 #ddd inset;
+            span {
+                max-width: 300px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                display: inline-block;
+            }
+            &::before{
+                background-color: #fff;
+                box-shadow: 1px 0 0 0 #ddd inset;
+            }
+            &::after{
+                background-color: #fff;
+                box-shadow: -1px 0 0 0 #ddd inset;
+            }
+        }
+    }
+}

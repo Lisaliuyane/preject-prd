@@ -1,0 +1,36 @@
+.page-ordermaintenance{
+    .ant-select-selection, .ant-calendar-picker-input, .ant-input, .ant-btn, .ant-input-number{
+        border-radius: 0;
+    }
+    .cus-table-header{
+        margin: 0;
+        display: flex;
+        padding: 0;
+        li{
+            border: 1px solid #D9D9D9;
+            border-left: none;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            padding: 0 15px;
+            cursor: pointer;
+            background-color: #fff;
+            &:first-child{
+                border: 1px solid #D9D9D9;
+            }
+            &:hover{
+                color: #18B583;
+            }
+            &.active{
+                border: 0;
+                color: #fff;
+                background: #18B583;
+            }
+        }
+    }
+    .ant-table-body{
+        td.cost-charge{
+            color: #18B583;
+        }
+    }
+}

@@ -1,0 +1,412 @@
+@import "~antd/lib/style/themes/default.less";
+/*  自定义样式  start   */
+body {
+    background: #f0f2f5;
+}
+li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* input placeholder color start */
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #aaa;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #aaa;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #aaa;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #aaa;
+}
+/* input placeholder color end */
+
+/* 单行显示超出省略号 start */
+.text-overflow-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* 单行显示超出省略号 end */
+
+p {
+    position:relative;
+    line-height:1.4em;
+    /* 3 times the line-height to show 3 lines */
+    overflow:hidden;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+/* 阴影使用 start */
+.paper-1 {
+    box-shadow: 0 1px 6px rgba(0,0,0,.117647), 0 1px 4px rgba(0,0,0,.117647);
+}
+// .paper-1-1 {
+//     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.217647), 0 1px 4px rgba(0, 0, 0, 0.217647);
+// }
+
+.paper-2 {
+    box-shadow: 0 3px 10px rgba(0,0,0,.156863), 0 3px 10px rgba(0,0,0,.227451);
+}
+.paper-3, .paper-4 {
+    box-shadow: 0 14px 45px rgba(0,0,0,.247059), 0 10px 18px rgba(0,0,0,.219608);
+}
+.paper-5 {
+    box-shadow: 0 19px 60px rgba(0,0,0,.298039), 0 15px 20px rgba(0,0,0,.219608);
+}
+/* 阴影使用 end */
+
+/* flex box start */
+.flex {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+}
+// 方向垂直
+.flex-direction-reverse {
+    flex-direction: row-reverse;
+}
+// 方向横向
+.flex-direction-column {
+    flex-direction: column;
+}
+// 横向不换行
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+// 横向换行
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.flex-left {
+    justify-content: flex-start;
+}
+.flex-right {
+    justify-content: flex-end;
+}
+// 水平居中
+.flex-level-center {
+    justify-content: center;
+}
+// 垂直居中
+.flex-vertical-center {
+    align-items: center;
+}
+.flex1{
+    flex: 1;  
+}
+/* flex box end */
+
+.h100 {
+    height: 100%;
+}
+.w100 {
+    width: 100%;
+}
+.text-center {
+    text-align: center;
+}
+
+.default-background {
+    background: @layout-body-background;
+}
+
+.table-action-num {
+    min-width: 40px;
+    max-width: 60px;
+    width: 45px;
+}
+.table-action-action {
+    min-width: 100px;
+}
+
+.index-list-table-style{
+    background-color: #fff;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.2);
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+.loading-page{
+    width: 100%;
+    height: 100%;
+    min-width: 600px;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .ant-spin-dot{
+        margin-bottom: 12px;
+    }
+}
+
+
+// /* 滚动条样式 */
+// *::-webkit-scrollbar{
+//     // display: none;
+//     width: 4px;
+//     height: 4px;
+// }
+// *::-webkit-scrollbar-thumb {
+//     /*滚动条里面小方块*/
+//     border-radius: 5px;
+//     -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+//     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset;
+//     background: rgba(0, 0, 0, 0.2);
+// }
+// *::-webkit-scrollbar-track {
+//     /*滚动条里面轨道*/
+//     -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+//     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset;
+//     border-radius: 4px;
+//     background: rgba(0, 0, 0, 0.1);
+// }
+// /* 滚动条样式 */
+
+
+// 表格 td 默认active激活样式
+.cus-table-cell-active{
+    background-color: #E4F5ED;
+}
+
+// 卡片阴影块样式
+.sd-block{
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+// 页面列表表格
+.page-table{
+    margin: 0 10px;
+}
+
+// 无 padding table
+.itable-nopad{
+    .ant-table.ant-table-bordered .ant-table-title{
+        padding: 0;
+    }
+}
+
+// 表格顶部按钮样式
+.tb-head-btn{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+// 自定义表格分页样式
+.tb-custom-pagination{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 0;
+}
+
+// 激活状态下划线tabs
+.itabs-bottomline{
+    &>.ant-tabs-bar{
+        height: 40px;
+        margin-bottom: 5px;
+
+        .ant-tabs-nav{
+            padding: 0 20px;
+            font-size: 14px;
+
+            .ant-tabs-tab{
+                // height: 40px;
+                // line-height: 40px;
+                padding: 10px 16px;
+                color: #999;
+                margin: 0 20px 0 0;
+
+                &.ant-tabs-tab-active{
+                    box-shadow: 0 -4px 0 0 #18B583 inset;
+                    color: #18B583;
+                }
+            }
+        }
+    }
+
+    &>.ant-tabs-content{
+        .ant-tabs-tabpane{
+            padding: 0 20px 20px;
+        }
+    }
+    &.nopad {
+        &>.ant-tabs-content{
+            .ant-tabs-tabpane{
+                padding: 0;
+            }
+        }
+    }
+}
+
+// 自定义card样式tabs
+.itabs-customcard{
+    &>.ant-tabs-bar{
+        height: 36px;
+        margin-bottom: 5px;
+
+        .ant-tabs-nav{
+            padding: 0 24px;
+            font-size: 12px;
+            
+            .ant-tabs-tab{
+                height: 36px;
+                line-height: 36px;
+                color: #999;
+            }
+
+            .ant-tabs-tab-active{
+                // box-shadow: 0 -4px 0 0 #18B583 inset;
+                color: #18B583;
+            }
+        }
+    }
+
+    &>.ant-tabs-content{
+        &>.ant-tabs-tabpane{
+            // padding: 0 20px 20px;
+        }
+    }
+
+    &.haspad{
+        &>.ant-tabs-content{
+            &>.ant-tabs-tabpane{
+                padding: 0 20px 20px;
+            }
+        }
+    }
+
+    &.nopad{
+        &>.ant-tabs-content{
+            &>.ant-tabs-tabpane{
+                padding: 0;
+            }
+        }
+    }
+
+    .plusStyle{
+        color: #1DA57A;
+        font-size: 14px;
+        border: 1px solid #1DA57A;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        text-align: center;
+        margin: 6px;
+        line-height: 18px;
+        display: inline-block;
+    }
+}
+
+// tab添加按钮 popconfirm 自定义样式
+.ipopconfirm-tabplus{
+    .ant-popover-inner-content{
+        .ant-popover-message-title{
+            padding-left: 0;
+            .ant-menu{
+                border-right: none;
+                .ant-menu-item{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+// 表格 popover 更多icon 样式
+td.itbcol-more{
+    vertical-align: middle;
+    span.more{
+        margin-left: 6px;
+        cursor: pointer;
+        display: inline-block;
+        border: 1px solid #18B583;
+        width: 14px;
+        height: 14px;
+        color: #18B583;
+        line-height: 14px;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+// 表格 承运商列 popover 更多显示
+.ipopover-carrier-more{
+     ul{
+        margin: 0;
+        padding: 0;
+        li{
+            display: flex;
+            height: 32px;
+            line-height: 32px;
+            align-items: center;
+            justify-content: space-between;
+            color: #333;
+            &:first-child{
+                border-bottom: 1px solid #e1e1e1;
+                color: #808080;
+            }
+            &>div{
+                margin-right: 8px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                &:nth-of-type(1){
+                    width: 60px;
+                }
+                &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
+                    width: 100px;
+                }
+                &:first-child{
+                    margin-right: 0px;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+            
+        }
+    }
+}
+// 表格 订单列 popover 更多显示
+.ipopover-order-more{
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            height: 32px;
+            line-height: 32px;
+            color: #333;
+            &:first-child{
+                border-bottom: 1px solid #e1e1e1;
+                color: #808080;
+            }
+        }
+    }
+}
+
+// 现金价 表格样式
+.itb-expense-cash{
+    padding: 10px;
+    background-color: #f7f7f7;
+    .ant-table-thead > tr > th{
+        background-color: #fff;
+        padding: 8px !important;
+    }
+    .ant-table-fixed-right{
+        box-shadow: none;
+    }
+}
+
+/*  自定义样式 end   */
